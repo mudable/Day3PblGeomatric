@@ -18,16 +18,20 @@ public class GeomatricProgram {
 	      double a2=scan.nextDouble();
 	      double b1=scan.nextDouble();
 	      double b2=scan.nextDouble();
-		double len1=Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
-		double len2=Math.sqrt((a2-a1)*(a2-a1)+(b2-b1)*(b2-b1));
-	    System.out.println("length is:"+len1);
-	    System.out.println("length is:"+len2);
-	    if (len1 == len2) {
+		double line1=Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+		double line2=Math.sqrt((a2-a1)*(a2-a1)+(b2-b1)*(b2-b1));
+	    System.out.println("length is:"+line1);
+	    System.out.println("length is:"+line2);
+	    if (line1 == line2) {
 			System.out.println("lines are equal");
 		}
-		else {
-			System.out.println("lines are not equal");			
+	    else if(line1>line2) {
+	    	System.out.println("Line1 is greater");
+	    }
+	    else {
+	    	
+	    	System.out.println("Line2 is lesser than Line1");
+	    }
 		}
+}
 
-}
-}
